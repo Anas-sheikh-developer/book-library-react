@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap');
+
+body {
+  font-family: 'Outfit', sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Premium Card */
+.book-card {
+  transition: all 0.3s ease;
+  border-radius: 16px;
+  border: 1px solid rgba(0,0,0,0.05);
+  background-color: var(--bs-body-bg);
+}
+
+.book-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.1) !important;
+}
+
+/* Dark mode adjustments */
+[data-bs-theme="dark"] .book-card {
+  border: 1px solid rgba(255,255,255,0.1);
+  background-color: #1e1e1e;
+}
+
+[data-bs-theme="dark"] .book-card:hover {
+  box-shadow: 0 20px 40px rgba(0,0,0,0.5) !important;
+}
+
+/* Image Box */
+.image-box {
+  height: 240px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f8f9fa;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  padding: 20px;
+}
+
+[data-bs-theme="dark"] .image-box {
+  background-color: #2b2b2b;
+}
+
+/* Fix for Buttons visibility */
+.btn-custom {
+  border-radius: 10px;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+/* Dark mode mein card ki border aur background clear dikhe */
+[data-bs-theme="dark"] .card {
+  background-color: #2b3035 !important; /* Card ka background thoda light dark */
+  border: 1px solid #444 !important;
+}
+
+/* Image box ka background dark mode mein adjust karo */
+[data-bs-theme="dark"] .bg-light {
+  background-color: #212529 !important;
+}
